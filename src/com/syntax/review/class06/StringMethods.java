@@ -29,6 +29,8 @@ public class StringMethods {
         System.out.println(index);//str = HELLO --> 4
         System.out.println(str.indexOf('a'));//str = HELLO -->-1
 
+        //
+
 
     }
 }
