@@ -1,0 +1,22 @@
+What is Object Oriented Programing?
+--> OOP is just a way of writing code. There are other ways as well like functional programming.
+Why we should learn about OOP?
+--> It helps maintain and modify code easily.
+--> it helps us write more secure code
+--> Simplify the development of large programs.
+-->It helps us reduce duplicate code in our programs.
+Main pillars of OOP
+  1. Classes and objects.
+  2. Inheritance.
+  3. Polymorphism.
+  4. Abstraction.
+  5. Encapsulation.
+
+Classes and Objects?
+--> A class is a template/Blueprint from which we create the objects.
+--> An object in programming is very similar to the object that we have in real life.
+    Object:
+           --> Object have states that defines how the object look like.
+               We define the states with the help of Attributes/Properties/fields inside a Class.
+               Objects can also have behaviors(Thing that object can do). We use methods to define
+               these behaviors.
