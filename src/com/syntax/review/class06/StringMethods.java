@@ -29,7 +29,13 @@ public class StringMethods {
         System.out.println(index);//str = HELLO --> 4
         System.out.println(str.indexOf('a'));//str = HELLO -->-1
 
-        //
+
+        System.out.println(str.indexOf('e')); //-1
+        System.out.println(str);
+
+        //isEmpty() - returns true if length is more than 0
+        boolean empty=str.isEmpty();
+        System.out.println(empty);
 
 
     }

@@ -12,7 +12,7 @@ public class review1 {
                     //OR
         StringBuilder stringBuilder = new StringBuilder("JAPAN");
         System.out.println(stringBuilder.reverse());
-        System.out.println(stringBuilder.toString().toLowerCase());
+       System.out.println(stringBuilder.toString().toLowerCase());
 
 
         String name1 = "Hello world";
@@ -20,6 +20,7 @@ public class review1 {
         reverse="";
         for(int i=array.length-1; i>=0; i--){
             reverse+=array[i];
+
 
         }
         System.out.println(reverse);
