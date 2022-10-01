@@ -1,4 +1,4 @@
-package com.syntax.project1;
+package com.syntax.Projects.project01;
 
 import java.util.Scanner;
 
