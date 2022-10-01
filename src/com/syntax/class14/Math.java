@@ -2,6 +2,7 @@ package com.syntax.class14;
 
 public class Math {
     void printFiboSeries(int size){
+        System.out.println("Fibonacci series of "+size);
 
         int previous=0;
         int currentNumber=1;
@@ -15,6 +16,8 @@ public class Math {
             currentNumber=nextNum;
         }
         System.out.println();
+        System.out.println("<<<<<<<<<<<<<>>>>>>>>>>>>>");
+
     }
 
     public static void main(String[] args) {
