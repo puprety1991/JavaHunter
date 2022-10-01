@@ -20,14 +20,32 @@ public class ScoreMethod {
             grade = 'C';
         } else if (avg < 70 && avg >= 50) {
             grade = 'D';
-        } else if (avg < 50 && avg >= 0) {
+        } else if (avg < 50 && avg > 0) {
             grade = 'F';
+        }
+        return grade;
+    }
+    char scoreGrade(int score){
+        char grade = 0;
+        if (score <= 100 && score >= 90) {
+            grade = 'A';
+        } else if (score < 90 && score >= 80) {
+            grade = 'B';
+        } else if (score < 80 && score >= 70) {
+            grade = 'C';
+        } else if (score < 70 && score >= 50) {
+            grade = 'D';
+        } else if (score < 50 && score > 0) {
+            grade = 'F';
+        }else{
+            grade= '*';
         }
         return grade;
     }
 
     public static void main(String[] args) {
         ScoreMethod student1 = new ScoreMethod();
-        System.out.println("You grade is "+student1.StudentGrade(99,98,96,85,90));
+        System.out.println("You grade is "+student1.StudentGrade(89,87,84,82,80));
+        System.out.println("You grade is "+student1.scoreGrade(0));
     }
 }

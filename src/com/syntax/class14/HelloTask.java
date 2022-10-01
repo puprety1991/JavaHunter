@@ -23,7 +23,7 @@ public class HelloTask {
 
     public static void main(String[] args) {
         HelloTask country = new HelloTask();
-        System.out.println("hello --> "+country.hello("russia"));
+        System.out.println("hello --> "+country.hello("mexico"));
 
     }
 }

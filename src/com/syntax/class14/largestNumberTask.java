@@ -17,7 +17,8 @@ public class largestNumberTask {
     public static void main(String[] args) {
         largestNumberTask findMax = new largestNumberTask();
         System.out.println("The largest number is "+findMax.max(7,6));
-
-
+                    //OR
+        String max = "The largest number is "+findMax.max(5,8);
+        System.out.println(max);
     }
 }
