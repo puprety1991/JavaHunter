@@ -1,2 +1,4 @@
-package com.syntax.replit;public class ejksjd {
+package com.syntax.replit;
+
+public class ejksjd {
 }
