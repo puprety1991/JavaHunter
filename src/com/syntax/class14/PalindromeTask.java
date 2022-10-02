@@ -14,7 +14,6 @@ public class PalindromeTask {
         }else{
             return false;
         }
-
     }
                 //using void behaviour
     void isPalindrome(String name){
@@ -27,7 +26,6 @@ public class PalindromeTask {
             System.out.println(name+" is not palindrome");
         }
     }
-
     public static void main(String[] args) {
         PalindromeTask toCheck = new PalindromeTask();
         if(toCheck.palidrome("Anna")){
