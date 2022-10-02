@@ -25,10 +25,36 @@ public class PrimeTask {
         }
 
     }
+    boolean toCheckPrime(int number){
+        boolean flag = true;
+
+        if(number>1){
+            for (int i = 2; i < number; i++) {
+
+                if (number % i == 0) {
+                    flag = false;
+                    break;
+                }
+
+        }
+
+        }else {
+            flag=false;
+        }
+
+       return flag ;
+        }
+
+
 
     public static void main(String[] args) {
         PrimeTask toCheck = new PrimeTask();
         if(toCheck.isPrime(9)){
+            System.out.println("This is Prime number");
+        }else{
+            System.out.println("This is not a prime number");
+        }
+        if(toCheck.toCheckPrime(67)){
             System.out.println("This is Prime number");
         }else{
             System.out.println("This is not a prime number");
