@@ -1,0 +1,17 @@
+Methods in Java:
+    Method is a block of code or some java statements grouped together.
+
+Why we should learn about the method:
+    Methods help us reduce the amount of code that we have to write. For eg. if a piece of code
+    is being repeated. we can crete a method for it and simple call the method. whenever we need that logic again.
+
+Syntax of creating method:
+    we cab create methods only inside a class.
+    [datatype] [method name][(datatype variableName)][method body]
+    [datatype] can be void boolean String int etc.
+    [method name] they are like variable names;
+    [(datatype variableName)] used to pass data while calling method
+
+How do we decide that we should use void or a method with a return keyword.
+    if we are building a method that will be used by others or in other parts of your code which
+    require some data from your method like an if condition we should not create methods with void type.

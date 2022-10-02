@@ -13,12 +13,24 @@ public class largestNumberTask {
         }
         return largest;
     }
+                    //OR
+    void printLarger(int n1, int n2){
+        if(n1>n2){
+            System.out.println(n1+" is larger than "+n2);
+        }else{
+            System.out.println(n2+" is larger than "+n1);
+        }
+    }
 
     public static void main(String[] args) {
         largestNumberTask findMax = new largestNumberTask();
         System.out.println("The largest number is "+findMax.max(7,6));
-                    //OR
+                    //another way
         String max = "The largest number is "+findMax.max(5,8);
         System.out.println(max);
+
+                    //using void
+        largestNumberTask findLarg = new largestNumberTask();
+        findLarg.printLarger(78,43);
     }
 }
