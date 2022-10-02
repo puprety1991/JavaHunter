@@ -37,6 +37,8 @@ public class HelloTask {
             case "Japan":
                 System.out.println("Nihau");
                 break;
+            default:
+                System.out.println("Not Found");
         }
 
     }
