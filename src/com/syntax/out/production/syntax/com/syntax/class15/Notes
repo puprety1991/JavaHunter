@@ -1,3 +1,20 @@
+Why we should exclude packages and class from compiling:
+    In intellij if we have a syntax error in any of the file in a project we can't run
+    another file unless and until we fix that error. some time we want to execute
+    code in some files without fixing those issue this is where we should exc
+
+How to Exclude packages:
+    Double-click the shift button twice quickly and type excludes and hit enter
+    from the pop-up window click on the plus button and select the packages that you
+    want to exclude.
+
+How Java code is compiled/executed on a computer:
+    We write the code in files with extension .java
+    once we hit the run button a software program called compiler checks this code for errors
+    and convert it to byte code. usually stored in a folder called bin/out.
+    JVM another software further converts this code to binary code and this binary code
+    is what is excluded on your computers.
+
 Methods in Java:
     Method is a block of code or some java statements grouped together.
 

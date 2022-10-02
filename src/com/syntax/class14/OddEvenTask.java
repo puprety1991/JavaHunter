@@ -11,6 +11,13 @@ public class OddEvenTask {
             return false;
         }
     }
+    void findEven(int number){
+        if(number%2==0){
+            System.out.println(number+" is Even Number");
+        }else{
+            System.out.println(number+" is Odd Number");
+        }
+    }
 
     public static void main(String[] args) {
         OddEvenTask toCheck = new OddEvenTask();
@@ -19,5 +26,7 @@ public class OddEvenTask {
         }else{
             System.out.println("The number is Odd");
         }
+        toCheck.findEven(65);
+
     }
 }

@@ -2,7 +2,7 @@ Why we should exclude packages and class from compiling:
     In intellij if we have a syntax error in any of the file in a project we can't run
     another file unless and until we fix that error. some time we want to execute
     code in some files without fixing those issue this is where we should exc
-    
+
 How to Exclude packages:
     Double-click the shift button twice quickly and type excludes and hit enter
     from the pop-up window click on the plus button and select the packages that you
