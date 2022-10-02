@@ -1,5 +1,7 @@
 package com.syntax.class14;
 
+import java.util.Scanner;
+
 public class largestNumberTask {
     /*
     Create a method that will take 2 parameters as a numbers and prints which number is larger.
@@ -21,7 +23,6 @@ public class largestNumberTask {
             System.out.println(n2+" is larger than "+n1);
         }
     }
-
     public static void main(String[] args) {
         largestNumberTask findMax = new largestNumberTask();
         System.out.println("The largest number is "+findMax.max(7,6));
@@ -32,5 +33,16 @@ public class largestNumberTask {
                     //using void
         largestNumberTask findLarg = new largestNumberTask();
         findLarg.printLarger(78,43);
+
+                    //Using Scanner
+        Scanner numbers = new Scanner(System.in);
+
+        System.out.println("Please enter two numbers");
+        int numb1 = numbers.nextInt();
+        int numb2 = numbers.nextInt();
+
+        largestNumberTask findbig = new largestNumberTask();
+        System.out.println("The largest number is "+findbig.max(numb1,numb2));
+        findbig.printLarger(numb1,numb2);
     }
 }
