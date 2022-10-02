@@ -21,11 +21,13 @@ public class OddEvenTask {
 
     public static void main(String[] args) {
         OddEvenTask toCheck = new OddEvenTask();
+         //calling boolean method
         if(toCheck.isEven(5)){
             System.out.println("The number is Even");
         }else{
             System.out.println("The number is Odd");
         }
+                //calling void method
         toCheck.findEven(65);
 
     }
