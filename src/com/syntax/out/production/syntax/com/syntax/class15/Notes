@@ -32,3 +32,29 @@ Syntax of creating method:
 How do we decide that we should use void or a method with a return keyword.
     if we are building a method that will be used by others or in other parts of your code which
     require some data from your method like an if condition we should not create methods with void type.
+========================================================================================================================
+Types of variable with respect to their score:
+    There are three types of variables w.r.t their scope.
+    1) local variable.
+    2) instance variable.
+    3) static variables.
+Local variables:
+    A variables that is created inside a method, loop, switch case, or any block of code is called
+    local variables.For eg.
+                           for(int i=0; i<5;i++){
+                           System.out.println(i) // 'i' is local variable
+                           }
+Why we should use local variables:
+    Local variables occupied computers memory for the shortest amount of time. We should always go with Local variables
+    if that is possibles.
+Instance variables:
+    Instance variables that is declared outside of block of code but inside a class are called instance variables.
+When we should use instance variables:
+    when we are planning to create multiple objects of a class or we want to share something in multiple methods we
+    should go with instance variables. They occupied the memory for longer as compare to local variables.
+Static variables:
+    if an instance variable has a keyword static is called a static variable.
+When we should use Static variables:
+    when we need to share something across the object. we use static variables but it occupies it memory for the longer
+    time.
+

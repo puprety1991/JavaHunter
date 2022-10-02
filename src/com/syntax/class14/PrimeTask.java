@@ -45,8 +45,6 @@ public class PrimeTask {
        return flag ;
         }
 
-
-
     public static void main(String[] args) {
         PrimeTask toCheck = new PrimeTask();
         if(toCheck.isPrime(9)){
