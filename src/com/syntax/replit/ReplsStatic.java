@@ -1,6 +1,6 @@
 package com.syntax.replit;
 
-public class Static {
+public class ReplsStatic {
     public static void main(String[] args) {
         /*
         Complete the mystery method so that it takes in an integer array as a parameter,

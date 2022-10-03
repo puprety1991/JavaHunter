@@ -13,8 +13,6 @@ public class MoreArray {
 	      total=0;
 	      for(int j=0; j<a[i].length; j++){
 	        total+=a[i][j];
-	         
-	          
 	        }
 	      if(total<zero) {
 	    	  if(total %2 !=0) {
