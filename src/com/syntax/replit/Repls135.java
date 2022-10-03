@@ -1,6 +1,6 @@
 package com.syntax.replit;
 
-public class StaticMethodDemo {
+public class Repls135 {
     static String surround(String s, String searchTerm){
         String reserve = s.replaceAll(searchTerm,"("+searchTerm+")");
         return reserve;
