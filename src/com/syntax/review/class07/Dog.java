@@ -9,10 +9,26 @@ public class Dog {
         System.out.println("Dog is playing with kids");
 
     }
-    void bark(){
-        System.out.println(name+" is barking");
+    String bark(){
+        // create a method that will return bark type
 
-    }
+        // if weight is more less than 5 --> loud
+        // if weight less 20 -> noise is wooh
+        // if weight is less 500 > noise Gav gav
+
+            String noise;
+
+            if (weight<5) {
+                noise="loud";
+            } else if(weight<10) {
+                noise="woof woof";
+            }else {
+                noise="GAV GAV";
+            }
+            return noise;
+        }
+
+
     void printInfo(){
         System.out.println("Dog name : "+name);
         System.out.println("Dog weight : "+weight);

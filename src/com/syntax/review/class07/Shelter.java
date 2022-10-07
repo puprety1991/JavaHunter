@@ -25,5 +25,7 @@ public class Shelter {
 
         dog1.printInfo();  // Dog features:Bobik, 5, german
         dog2.printInfo();  // Dog features:Tommy, 10, german
+        System.out.println(dog1.bark());
+        System.out.println(dog2.bark());
     }
 }
