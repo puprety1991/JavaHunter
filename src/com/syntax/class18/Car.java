@@ -17,7 +17,7 @@ public class Car{
 }
 
 class BMW extends Car {
-    //Child class also called derived class or subclass.
+    //Child class also called subclass or derived class.
     double engineHP;
     }
 
