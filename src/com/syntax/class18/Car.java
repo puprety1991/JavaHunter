@@ -13,7 +13,6 @@ public class Car{
     void carInfo(){
         System.out.println("Make: "+make+", Model: "+model+", Color: "+color);
     }
-
 }
 
 class BMW extends Car {
