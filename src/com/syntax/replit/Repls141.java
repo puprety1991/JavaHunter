@@ -7,7 +7,7 @@ public class Repls141{
     **Expected Output:**`
         -->22
      */
-        static int maxValue(int[] num){
+        public static int maxValue(int[] num){
             int max=0;
             for(int i=0; i<num.length;i++){
                 if(num[i]>max){

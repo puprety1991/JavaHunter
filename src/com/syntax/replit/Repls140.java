@@ -12,6 +12,7 @@ public class Repls140 {
         String store = "";
         for(int i=0;i<word.length;i++){
             if(word[i].length()>maxLen){
+                maxLen=word[i].length();
                 store =word[i];
             }
         }

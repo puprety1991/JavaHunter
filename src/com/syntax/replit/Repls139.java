@@ -25,34 +25,24 @@ public class Repls139 {
      */
    String  alphabetical(String str) {
            String result="";
-           int j=1;
-           for(int i=0;i<str.length()-1;i+=2) {
-               if(j<str.length()){
-                   if ((str.charAt(i) > str.charAt(j))||(str.charAt(i) == str.charAt(j))) {
-                       result = result + str.charAt(i);
-                       j+=2;
-
-                   }else if(str.charAt(j) > str.charAt(i)) {
-                       result = result + str.charAt(j);
-                       j += 2;
+       //System.out.println(str.length());==> print 8 for the software
+           for(int i=0;i<str.length()-1;i++) {
+               if(i==0){
+                  result+=str.charAt(i);                          //length of software = 8 (8-1)=7
+                                                                 // 0-s, 1-o, 2-f, 3-t, 4-w, 5-a, 6-r, 7-e
+                   }if(str.charAt(i+1)>str.charAt(i)){          //i =0-s,
+                       result = result + str.charAt(i+1);       // i+1=
                    }
-               }
+               }                                                        //116>102-true
 
-           }
            return result;
        }
         public static void main(String[] args){
             Repls139 main = new Repls139();
-            String output = main.alphabetical("hello");
-            System.out.println(output);
+            System.out.println(main.alphabetical("hello"));
+            System.out.println(main.alphabetical("software"));
+            System.out.println(main.alphabetical("language"));
 
-            Repls139 main1 = new Repls139();
-            String output1 = main.alphabetical("software");
-            System.out.println(output1);
-
-            Repls139 main2 = new Repls139();
-            String output2 = main.alphabetical("language");
-            System.out.println(output2);
 
         }
 }
