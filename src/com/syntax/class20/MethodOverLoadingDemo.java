@@ -20,4 +20,10 @@ public class MethodOverLoadingDemo {
     static void method(String day,String quotes){
         System.out.println(day+" "+quotes);
     }
+
+    public static void main(String[] args) {
+        MethodOverLoadingDemo obj = new MethodOverLoadingDemo();
+        obj.method(4,6);
+        obj.method("friday",true);
+    }
 }
