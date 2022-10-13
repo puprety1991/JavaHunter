@@ -28,9 +28,10 @@ class Puskar extends ParentPoly{
 }
 class TesterParent{
     public static void main(String[] args) {
-       //ParentPoly parentPoly=new Helen();
-       //parentPoly=new Prakriti();
-       //parentPoly=new Puskar();
+       ParentPoly parentPoly=new Helen();
+      // parentPoly.sleep();
+       parentPoly=new Prakriti();
+       parentPoly=new Puskar();
        //or
         ParentPoly[] family = new ParentPoly[3];
         family[0]=new Helen();

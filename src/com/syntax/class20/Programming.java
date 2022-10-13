@@ -9,15 +9,16 @@ public class Programming {
     if we pass "Java", then "I love Java" should be printed.
      */
 
-    static void info(){
+    Programming(){
         System.out.println("I love programming languages" );
     }
-    static void info(String str){
+    Programming(String str){
         System.out.println("I love "+str);
     }
-
+}
+class Tester{
     public static void main(String[] args) {
-        info();
-        info("Java");
+        Programming obje = new Programming();
+        Programming obj = new Programming("Java");
     }
 }

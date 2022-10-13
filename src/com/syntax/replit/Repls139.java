@@ -21,7 +21,7 @@ public class Repls139 {
     **Expected Output:**
         hlo
         stwr
-        lnug
+        lnug   result=result+charAt(i)
      */
    String  alphabetical(String str) {
            String result="";
@@ -41,8 +41,9 @@ public class Repls139 {
         public static void main(String[] args){
             Repls139 main = new Repls139();
             System.out.println(main.alphabetical("hello"));
-           // System.out.println(main.alphabetical("software"));
-            //System.out.println(main.alphabetical("language"));
+            System.out.println(main.alphabetical("software"));
+            System.out.println(main.alphabetical("language"));
+
 
 
         }
