@@ -22,21 +22,35 @@ public class Teacher {
         this(name, lastName);//Constructor call must be the first statement
         this.subject = subject;
     }
-    Teacher(String name, String lastName,String subject,int experience) {
-        this(name, lastName,subject);
-        this.experience=experience;
+
+    Teacher(String name, String lastName, String subject, int experience) {
+        this(name, lastName, subject);
+        this.experience = experience;
 
     }
-    static void work(){
-        System.out.println("All teachers work at "+SchoolName);
+
+    static void work() {
+        System.out.println("All teachers work at " + SchoolName);
     }
-    void info(){
-        System.out.println("Teacher name is "+name+" "+lastName);
+
+    void info() {
+        System.out.println("Teacher name is " + name + " " + lastName);
     }
-    void teach(){
+
+    void teach() {
         this.info();
-        System.out.println(name+" is "+subject+" teacher. Who has "+experience+" years experience.");
+        System.out.println(name + " is " + subject + " teacher. Who has " + experience + " years experience.");
     }
+
+    //method that will calculate bonus based on experience and returns it
+    int getBonus() {
+        if (experience > 5) {
+            return 10000;
+        } else {
+            return 5000;
+        }
+    }
+
 }
 class TeacherTester{
     public static void main(String[] args) {
@@ -45,6 +59,7 @@ class TeacherTester{
         Teacher teacher2 = new Teacher("Harry","Potter","Biology",6);
         teacher2.teach();
         work();
+        System.out.println("Your bonus is "+teacher2.getBonus()+".");
 
 
     }
