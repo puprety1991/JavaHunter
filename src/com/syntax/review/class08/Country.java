@@ -5,7 +5,9 @@ public class Country {
     protected String capital;
     int population;
     private String president;
-
+void getPop(){
+    System.out.println("Population: "+population);
+}
 }
 class Peru extends Country{
 
@@ -16,5 +18,6 @@ class CountryTester{
         peru.capital = "Lima";
         peru.population=22000000;
         //peru.president --> not accessible because of private access modifiers.
+        peru.getPop();
     }
 }
