@@ -1,5 +1,4 @@
 package com.syntax.class21;
-
 public class Task2 {
     /*
     Create a class CreditCard and define variable balance and interest.
@@ -26,7 +25,6 @@ class CreditCard{
     }
 }
 class Visa extends CreditCard{
-
 }
 class AX extends CreditCard{
     void calculate(double balance){
