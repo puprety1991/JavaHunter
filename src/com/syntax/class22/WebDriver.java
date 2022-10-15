@@ -44,3 +44,22 @@ class Safari extends WebDriver{
         System.out.println("Closing the Safari browser");
     }
 }
+class WebDriverTester{
+    public static void main(String[] args) {
+        //WebDriver driver = new Safari();
+        //Creating objects of all Child classes and storing in an array of type WebDriver we can do this because
+        //it allows us to do this.
+        WebDriver[] driver1 ={new Chrome(),new FireFox(),new Safari()};
+        for(WebDriver browser:driver1){
+            browser.startBrowser();
+            browser.test();
+            browser.closeBrowser();
+        }
+                //OR
+        for(int i=0;i<driver1.length;i++){
+            driver1[i].startBrowser();
+            driver1[i].test();
+            driver1[i].closeBrowser();
+        }
+    }
+}
