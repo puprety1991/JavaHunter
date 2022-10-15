@@ -1,7 +1,5 @@
 package com.syntax.HackerRank;
 
-import java.util.Scanner;
-
 public class OddEven {
     /*
     Task
@@ -12,26 +10,21 @@ public class OddEven {
     If 'n' is even and greater than 20, print "Not Weird"
     NOTE: TRY TO SOLVE USING CONSTRUCTOR AND METHOD WHICH WE JUST LEARN. YOU CAN CREATE OBJECT IN SAME CLASS.
      */
-   static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Enter a number?");
-        int N = scanner.nextInt();
-        if (N >= 6 && N <= 20) {
-            System.out.println("Weird");
-
-        }
-        if (N % 2 == 0) {
-            if((N>=2 && N<=5)||(N>20)){
+        int n=8;
+        if (n%2==0) {
+            if(n>=2 && n<=5){
+                System.out.println("Not Weird");
+            } else if (n>=6 && n<=20){
+                System.out.println("Weird");
+            } else if (n>20){
                 System.out.println("Not Weird");
             }
 
-
-        } else if(!(N >= 6 && N <= 20)) {
+        } else{
             System.out.println("Weird");
-
         }
-
     }
 }
 
