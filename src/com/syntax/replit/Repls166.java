@@ -22,9 +22,9 @@ public class Repls166 {
 }
     class Animal {
         String food;
-    Animal(String food) {
-        this.food = food;
-    }
+        Animal(String food) {
+            this.food = food;
+        }
         void eat() {
             System.out.println("Animal eats");
         }
