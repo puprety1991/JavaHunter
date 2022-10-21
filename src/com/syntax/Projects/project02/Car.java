@@ -52,11 +52,11 @@ class Truck extends Car{
 }
 class carTester{
     public static void main(String[] args) {
-        Car[] car={new Sedan(25000,2100),new Truck(45000,20)};
+        Car[] car={new Sedan(31000,1900),new Truck(50000,25)};
         System.out.println();
         for(Car vehicle:car){
             System.out.println("Actual Price Of Vehicle Is $"+ vehicle.carPrice+
-                    ". Final Price Of Vehicle Is $"+vehicle.calculateSalePrice());
+                    ". Discounted Price Is $"+vehicle.calculateSalePrice());
         }
     }
 }

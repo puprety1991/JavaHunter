@@ -48,7 +48,7 @@ class MarksTester{
         Marks[] score ={new StudentA(78,87,74),new StudentB(89.5,76,80,93)};
         System.out.println();
         for(Marks avg:score){
-            System.out.println("The Average Percentage of: "+avg.getPercentage()+"%");
+            System.out.println("The Average Percentage of Student is: "+avg.getPercentage()+"%");
         }
     }
 }
