@@ -1,11 +1,11 @@
 package com.syntax.Projects.project02;
 /*
-We have to calculate the average of marks obtained in three subjects by
-student A and by student B. Create class 'Marks' with an abstract
-method 'getPercentage' that will be returning the average percentage of marks.
-Provide implementation of abstract method in classes 'A' and 'B'.
-The constructor of student A takes the marks in three subjects as
-its parameters and the marks in four subjects as its parameters for student B. Test your code
+    We have to calculate the average of marks obtained in three subjects by
+    student A and by student B. Create class 'Marks' with an abstract
+    method 'getPercentage' that will be returning the average percentage of marks.
+    Provide implementation of abstract method in classes 'A' and 'B'.
+    The constructor of student A takes the marks in three subjects as
+    its parameters and the marks in four subjects as its parameters for student B. Test your code
 */
 public abstract class Marks {
     abstract double getPercentage();
@@ -37,7 +37,6 @@ class StudentB extends Marks{
         this.scoreEnglish=scoreEnglish;
         this.scoreArts=scoreArts;
     }
-
     @Override
     double getPercentage() {
         return (scoreMath+scoreScience+scoreEnglish+scoreArts)/4;
