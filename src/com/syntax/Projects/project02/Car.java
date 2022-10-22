@@ -19,24 +19,8 @@ public class Car {
     }
 }
 class Sedan extends Car{
-    int weight;
-    Sedan(double carPrice,int weight){
-        super(carPrice);
-        this.weight=weight;
-    }
-
-    @Override
-    double calculateSalePrice() {
-        if(weight>2000){
-            return (carPrice-(carPrice*10/100));
-        }else{
-            return (carPrice-(carPrice*20/100));
-        }
-    }
-}
-class Truck extends Car{
     int length;
-    Truck(double carPrice, int length){
+    Sedan(double carPrice,int length){
         super(carPrice);
         this.length=length;
     }
@@ -47,6 +31,21 @@ class Truck extends Car{
             return (carPrice-(carPrice*5/100));
         }else{
             return (carPrice-(carPrice*10/100));
+        }
+    }
+}
+class Truck extends Car{
+    int weight;
+    Truck(double carPrice, int weight){
+        super(carPrice);
+        this.weight=weight;
+    }
+    @Override
+    double calculateSalePrice() {
+        if(weight>2000){
+            return (carPrice-(carPrice*10/100));
+        }else{
+            return (carPrice-(carPrice*20/100));
         }
     }
 }
