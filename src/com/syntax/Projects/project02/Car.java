@@ -24,7 +24,6 @@ class Sedan extends Car{
         super(carPrice);
         this.length=length;
     }
-
     @Override
     double calculateSalePrice() {
         if(length>20){
