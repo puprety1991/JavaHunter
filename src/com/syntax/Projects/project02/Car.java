@@ -50,7 +50,7 @@ class Truck extends Car{
 }
 class carTester{
     public static void main(String[] args) {
-        Car[] car={new Sedan(31000,1900),new Truck(50000,25)};
+        Car[] car={new Sedan(31000,20),new Truck(50000,25000)};
         System.out.println();
         for(Car vehicle:car){
             System.out.println("Actual Price Of Vehicle Is $"+ vehicle.carPrice+
