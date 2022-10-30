@@ -1,0 +1,28 @@
+Collection Framework:
+    Collection framework is collection of multiple classes and interface which help us process
+    the data efficiently and easily.
+Why we should learn about it?
+    1) Its very flexible
+    20 Provide ready-made methods that we can just use.
+What is the Syntax?
+    It's similar how we create the object of any class but we used <> to specify the name of the class
+    whose objects we are going to store in that class.
+Issues with Collections framework:
+    1) Collections framework does not work with primitive datatype (solution is use wrapper classes).
+
+Note: Frequently asked in interviews!!!!!
+Wrapper classes:
+    Wrapper classes are object types for all all primitive types.
+Boxing:
+    Converting the primitive data type to its corresponding wrapper type by explicitly calling a method.
+       //  Integer wrapperNum = Integer.valueOf(num); / //boxing or manual conversion from primitive to wrapper type
+Auto Boxing:
+    Converting the primitive data type to its corresponding wrapper type by simply assigning the values.
+        int num=10
+        Integer wrapperNum = num;
+Unboxing:
+    Converting wrapper to its corresponding primitive type by explicitly calling method a method.
+      int num2 = wrapperNum.intValue()
+Auto-unboxing:
+    Converting wrapper to its corresponding primitive data type by simply assigning the value
+        int num2 = wrapperNum
