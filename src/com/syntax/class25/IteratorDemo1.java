@@ -1,7 +1,6 @@
 package com.syntax.class25;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class IteratorDemo1 {
     public static void main(String[] args) {
@@ -19,14 +18,8 @@ public class IteratorDemo1 {
         System.out.println("Conditioner");
 
         // get the iterator from the list
-        Iterator<String> iterator = beautyProducts.iterator();
-        while (iterator.hasNext()){
-            String item = iterator.next();
-            if(item.endsWith("r")){
-                iterator.remove();
-            }
-
-        }
+        //Iterator<String> iterator = beautyProducts.iterator();
+        beautyProducts.removeIf(item -> item.endsWith("r"));
         System.out.println(beautyProducts);
     }
 }

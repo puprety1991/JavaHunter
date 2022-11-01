@@ -26,3 +26,5 @@ Unboxing:
 Auto-unboxing:
     Converting wrapper to its corresponding primitive data type by simply assigning the value
         int num2 = wrapperNum
+Iterators:
+

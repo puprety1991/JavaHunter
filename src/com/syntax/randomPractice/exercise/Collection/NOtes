@@ -1,0 +1,41 @@
+3 ways to store the data using java.
+1) variables (we can store only one value)
+2) Arrays(They can store multiple objects but they are fixed in size)
+3) Collection(Can store multiple objects and they are dynamic can gro and shrink the size at the runtime)
+    we can not use primitives with collections. Collection can be used with objects only.
+Wrapper Classes:
+   Are classes from java guys that help us to use collections with our primitive types as they are
+   objects they also have many built-in methods to manipulate the data types. for example, converting String to an Integer.
+   String number ="10";
+   int num=Integer.parseInt(number)
+Iterator is n interface that lets use iterate through any collection. It has three methods
+    1) hasNext() -- checks if there are any elements left in the collection
+    2) next() -- will return me the next element from the collection
+    3) remove() -- remove method it will remove the element from the collection.
+
+All of the collection classes they have a method iterator() using this method i can get an object
+of the iterator and then i can call the above three methods to iterate or to remove the elements.
+Note:
+    Iterators can be used only once. Once we have used the iterator we need a new once if we want to
+    iterate the collection again.
+ArrayList:
+    It is consecutive memory locations.
+
+Set:
+    Set is data structure that stores unique objects unordered collection
+    of objects in which duplicate values cannot be stored.
+Properties:
+    1. Can't store duplicate elements
+
+                      Methods in HasSet
+●   boolean add(Element  e): It adds the element e to the list.
+●   void clear(): It removes all the elements from the list.
+●   boolean contains(Object o): It checks whether the specified Object o is
+      present in the list or not. If the object has been found it returns true else false.
+●   boolean isEmpty(): Returns true if there is no element present in the Set.
+●   Iterator iterator(): Used to return an iterator over the element in the set.
+●   int size(): It gives the number of elements of a Set.
+●   Boolean remove (Object o): It removes the specified Object from the Set.
+●   Object clone(): This method returns a shallow copy of the HashSet.
+
+

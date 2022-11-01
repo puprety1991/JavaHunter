@@ -3,6 +3,7 @@ package com.syntax.class25;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+
 public class IteratorNextIssue {
     public static void main(String[] args) {
         ArrayList<String> beautyProducts = new ArrayList<>();

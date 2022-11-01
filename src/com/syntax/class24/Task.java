@@ -1,6 +1,7 @@
 package com.syntax.class24;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Task {
     /* Create an ArrayList that will store 5 names into it.
@@ -28,5 +29,6 @@ public class Task {
         }else{
             System.out.println("Its empty");
         }
+        LinkedList<Integer>number=new LinkedList<>();
     }
 }
