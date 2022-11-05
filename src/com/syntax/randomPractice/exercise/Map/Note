@@ -1,0 +1,10 @@
+Maps:
+  Maps is a data structure in java that stores the data in key value pairs.
+  It is a good choice store and manipulate large amount of data.
+  Properties:
+    The Keys must be unique.
+    values can be duplicate.
+How to declare:
+             HasMap<Key,Value> map=new HashMap<>();
+             Key can be any object
+             value can be any object

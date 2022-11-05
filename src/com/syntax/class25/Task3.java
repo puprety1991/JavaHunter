@@ -8,8 +8,19 @@ public class Task3 {
        Remove any number that is divisible by 5 from that arrayList.*/
         ArrayList<Integer>number=new ArrayList<>();
         for(int i=2;i<=500;i+=2){
-            if(!(i%5==0)){
-                number.add(i);
+            number.add(i);
+            // OR
+           /* if(i%5 !=0){
+                number.add(i);*/
+            }
+            /*System.out.println(number);*/
+        //}
+        //System.out.println(number);
+        var iterator = number.iterator() ;
+        while(iterator.hasNext()){
+            var num = iterator.next();
+            if(num%5==0){
+                iterator.remove();
             }
         }
         System.out.println(number);

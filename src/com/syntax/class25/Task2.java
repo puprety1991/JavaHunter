@@ -9,7 +9,7 @@ public class Task2 {
         drink.add("coke");
         drink.add("coco");
         drink.add("sprite");
-        drink.add("smooth");
+        drink.add("coca");
         drink.add("lemonade");
         int counter=0;
         var iterator = drink.iterator();

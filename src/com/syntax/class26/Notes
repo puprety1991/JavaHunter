@@ -1,0 +1,79 @@
+Collection Frameworks:
+    It's collection of classes and interfaces that help us store and manipulate the data efficiently.
+
+Why we should use Collection Framework?
+    1) It's flexible(we do not need to provide size before hand).
+    2) It's dynamic(all the classes can increase and decrease their size at run time).
+    3) There are built-in methods to perform common tasks.
+    4) Pre-built data structures.
+
+Downsides of Collection framework:
+    1) We can't use primitive data types we to use Wrapper classes which occupy 4 times more memory
+       than a primitive.
+            int num=1- //4 memory locations
+            Integer num1 = 10 // 16 memory locations
+Wrapper:
+    Wrapper classes are object types for all the primitive types
+
+Why should we learn about the wrapper types?
+    1) Because collections framework only supports wrapper types
+    2) There are built-in method to perform common tasks.
+
+DownSides:
+    1) We can't use primitive data types we to use Wrapper classes which occupy 4 times more memory
+           than a primitive.
+                int num=1- //4 memory locations
+                Integer num1 = 10 // 16 memory locations
+
+Boxing:
+    Converting a primitive to its corresponding wrapper type by manually calling methods.
+    int pnum=10;
+    Integer wnum=new Integer(pnum);
+AutoBoxing:
+    Conversion from primitive to a wrapper type but we don't need to call any methods explicitly.
+    int num=10;
+    Integer num1=num;
+
+Unboxing:
+    Converting a wrapper to a primitive by calling a method.
+    Integer wnum=new Integer(10);
+     int pnum=wnum.intValue;
+AutoUnboxing:
+    Converting a wrapper to primitive without calling any methods.
+       Integer wnum= new Integer(10);
+       int pnum=wnum
+
+ArrayList Class:
+    It is a classes in collection framework that allows us to store data like any array.
+    Some common methods from this class are 1) add() 2) remove 3)contains 4) size().
+
+Iterator:
+    It is a mechanism that allows us to iterate the delete data from any class in collections frameworks.
+    It has hasNext(), next(), and remove()
+Why we should learn about Iterator?
+    Because loops are not safe when we perform an operator that can change the siz of a data structure.
+
+ArrayList Vs LinkedList:
+    Both of the classes implements the list interface which means both of them will have same methods.
+ArrayList:
+    Uses an array behind scenes to store the data.
+    We should use arrayList when we are retrieving the data most of the times and not inserting in the start or
+    in-between if we have to shift the data.
+LinkedList:
+    LinkedList does not store the data in consecutive memory locations that is why it is easier to insert.
+    and remove the data from anywhere in a list.
+    If you are going to manipulate the data(shifting of elements) always use LinkedList.
+Note:
+    If most of the times you use add or remove method then use LinkedList.
+    If most of the times you use get method use ArrayList.
+
+Sets:
+
+
+
+
+
+
+
+
+
