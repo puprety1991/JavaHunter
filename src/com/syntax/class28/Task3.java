@@ -1,56 +1,24 @@
 package com.syntax.class28;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.Set;
 
-/*
-        Create a Person class with following private fields: name, lastName, age, salary.
-        Variables should be initialized through constructor.
-        Inside the class also create a method to print user details.
-        In Test Class create a Map that will store key in ascending order.
-        In that map store personId and a Person Object. Print each object details.
-        */
 public class Task3 {
-            public static void main(String[] args) {
-                Person person1 = new Person("Oscar","Pathak",44,106000);
-                Person person2 = new Person("Sarah","Khan",34,56000);
-                Person person3 = new Person("Jonny","Kharel",24,160000);
-                Person person4 = new Person("Johnson","Adhikari",55,102000);
-                Person person5 = new Person("Harry","Patel",31,96000);
-                Map<Integer,Person>personInfo=new TreeMap<>();
-                personInfo.put(4,person5);
-                personInfo.put(2,person2);
-                personInfo.put(1,person1);
-                personInfo.put(3,person3);
-                personInfo.put(5,person4);
-                System.out.println(personInfo);
-            }
+    /*Crate a map  of Best Buy store. Place item id and item name into it.
+   Example (7664847=Printer,7879885=TV etc).
+   Retrieve all keys and values from a Best Buy Map using EntrySet.*/
+    public static void main(String[] args) {
+        Map<Integer,String> stock = new LinkedHashMap<>();
+        stock.put(7664847,"Printer");
+        stock.put(7879885,"TV");
+        stock.put(7665789,"Go Pro");
+        stock.put(7566831,"Drone");
+        stock.put(7267856,"SLR Camera");
+        Set<Map.Entry<Integer, String>> allInfo = stock.entrySet();
+        for (Map.Entry<Integer, String>each:allInfo){
+            System.out.println("Keys: "+each.getKey()+", Values: "+each.getValue());
+        }
 
-
-}
-class Person{
-    private String fname;
-    private String lname;
-    private int age;
-    private int salary;
-
-    public Person(String fname, String lname, int age, int salary) {
-        this.fname = fname;
-        this.lname = lname;
-        this.age = age;
-        this.salary = salary;
-    }
-    void getDetails(){
-        System.out.println("First Name: "+fname+", Last Name: "+lname+", Age: "+age+", Salary: "+salary);
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "fname='" + fname + '\'' +
-                ", lname='" + lname + '\'' +
-                ", age=" + age +
-                ", salary=" + salary +
-                '}';
     }
 }

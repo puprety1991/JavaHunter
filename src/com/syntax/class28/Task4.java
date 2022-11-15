@@ -1,33 +1,56 @@
 package com.syntax.class28;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+import java.util.TreeMap;
 
+/*
+        Create a Person class with following private fields: name, lastName, age, salary.
+        Variables should be initialized through constructor.
+        Inside the class also create a method to print user details.
+        In Test Class create a Map that will store key in ascending order.
+        In that map store personId and a Person Object. Print each object details.
+        */
 public class Task4 {
-  /*  Create a Map that will store Employee name and salary. Write a logic to retrieve
-    an employee who gets the highest salary. Output should be in the below format
-    John Smith=$100000*/
-  public static void main(String[] args) {
-      Map<String,Integer>employees = new HashMap<>();
-      employees.put("Sarah Johnson",45000);
-      employees.put("Harry Patel",120000);
-      employees.put("Robin Sharma",78000);
-      employees.put("Henry Adhikari",98000);
-      employees.put("Raju Yadav",56000);
-      Set<Map.Entry<String, Integer>> entries = employees.entrySet();
-      int highest = 0;
-      var name="";
-      for(var getInfo:entries){
-          var salary = getInfo.getValue();
-           name = getInfo.getKey();
-          if(salary>highest){
-              highest=salary;
-              System.out.println(name+"= $"+highest);
+            public static void main(String[] args) {
+                Person person1 = new Person("Oscar","Pathak",44,106000);
+                Person person2 = new Person("Sarah","Khan",34,56000);
+                Person person3 = new Person("Jonny","Kharel",24,160000);
+                Person person4 = new Person("Johnson","Adhikari",55,102000);
+                Person person5 = new Person("Harry","Patel",31,96000);
+                Map<Integer,Person>personInfo=new TreeMap<>();
+                personInfo.put(4,person5);
+                personInfo.put(2,person2);
+                personInfo.put(1,person1);
+                personInfo.put(3,person3);
+                personInfo.put(5,person4);
+                System.out.println(personInfo);
+            }
 
-          }
 
-      }
+}
+class Person{
+    private String fname;
+    private String lname;
+    private int age;
+    private int salary;
 
-  }
+    public Person(String fname, String lname, int age, int salary) {
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+        this.salary = salary;
+    }
+    void getDetails(){
+        System.out.println("First Name: "+fname+", Last Name: "+lname+", Age: "+age+", Salary: "+salary);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "fname='" + fname + '\'' +
+                ", lname='" + lname + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
+    }
 }
