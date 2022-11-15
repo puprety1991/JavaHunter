@@ -1,0 +1,17 @@
+File handling in java:
+What are files?
+    -->  Files are mechanism that help us to store  data permanently on our computer.
+Why we should use fil instead of putting the data with code?
+    --> Every time when we make to change, we don't need to redeploy and recompile the code.
+Steps involved in the compiling and deploying the code.
+server => Computer that are up all the time they are sam as our normal laptop/computer with very good hardware.
+    1) Developers develop code on development server perform unit testing and they deploy this code to QA servers.
+    2) Testers Test the application on the QA serves.
+    3) After QA is done they may deploy the code on performance, security testing servers.
+    4) Deployment on Staging servers.
+    5) Deployment on UAI servers.
+    6) Deployment on Production servers.
+
+To avoid all of these processes we create a configuration file and we store the configuration in the file.
+this configuration file may contain:
+    Usernames, Passwords URLs to database other information for configuration
