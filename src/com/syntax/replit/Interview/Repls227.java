@@ -19,23 +19,27 @@ public class Repls227 {
        System.out.println(HTMLElements("<div><div><b></b></div></p>"));
        System.out.println(HTMLElements("<div>abc</div><p><em><i>test test test</b></em></p>"));
    }
-    public static String HTMLElements(String str) {
-        int length = str.length();
+    public static String HTMLElements(String str){
+        LinkedList<String> open = new LinkedList<>();
+        List<String> openTags = Arrays.asList("b", "i", "em", "div", "p");
+        List<String> closeTags = Arrays.asList("/b", "/i", "/em", "/div", "/p");
 
-        String[] openingTag = {"<br>", "<i>", "<div>", "<a>"};
-        String[] closingTag = {"</br>", "</i>", "</div>", "</a>"};
+        String[] splits = str.split("[><]");
 
-        List<String> dom = new LinkedList<>();
-        var iterator = Arrays.stream(openingTag).iterator();
-        var iterator1 = Arrays.stream(closingTag).iterator();
-        return"";
-
+        for (int i = 0; i < splits.length; i++) {
+            if (openTags.contains(splits[i])) {
+                open.add(splits[i]);
+            }
+            if (closeTags.contains(splits[i])) {
+                if (open.size() != 0) {
+                    if (open.getLast().equals(splits[i].substring(1))) {
+                        open.removeLast();
+                    } else {
+                        return open.getLast();
+                    }}}}
+        return "true";
     }
-
-
-
-
-    }
+}
 
 
 
