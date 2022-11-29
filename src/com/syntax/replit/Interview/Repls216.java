@@ -12,18 +12,20 @@ public class Repls216 {
     N will be given as input to the function and function will return
     an array whose element will sum to zero.*/
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(arraySumToZero(4)));
+        System.out.println(Arrays.toString(arraySumToZero(3)));
 
     }
     public static int[] arraySumToZero(int N) {
         int[] arr = new int[N];
-        for (int i = 0; i < N - 1; i += 2) {
+        for (int i = 0; i < N ; i +=2) {
+            if(i<N-1){
+                arr[i] = i + 1;
+                arr[i+1] = -(i + 1);
+            }else{
+                arr[i] = 0;
+            }
 
-            arr[i] = i + 1;
-
-            arr[i + 1] = -(i + 1);
         }
-
         return arr;
     }
 }

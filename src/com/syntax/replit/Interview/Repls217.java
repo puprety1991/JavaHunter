@@ -8,28 +8,29 @@ public class Repls217 {
 
     public static void main(String[] args ){
         List<Integer>number=new ArrayList<>();
-        number.add(5);
-        number.add(5);
-        number.add(3);
-        number.add(2);
-        number.add(5);
-
+        number.add(12);
+        number.add(12);
+        number.add(7);
+        number.add(17);
+        number.add(12);
+        number.add(7);
+        number.add(27);
+        number.add(27);
         System.out.println(countDuplicates(number));
     }
     public static int countDuplicates(List<Integer> numbers){
-        var iterator=numbers.iterator();
-        var iterator1=numbers.iterator();
-        int count=0;
-        while(iterator.hasNext()){
-            var number= iterator.next();
-            while(iterator1.hasNext()){
-                var number1 = iterator1.next();
-                if(number.equals(number1)){
-                    count++;
-            }
-
-            }
-        }
-        return count;
+        int count = 0;
+        int previousInt = 0;
+       for(int i=0;i<numbers.size()-1;i++){
+           for(int j=i+1;j<numbers.size();j++){
+               if(numbers.get(i).equals(numbers.get(j))){
+                   if(previousInt != numbers.get(j)){
+                       previousInt=numbers.get(j);
+                       count++;
+                   }
+               }
+           }
+       }
+       return count;
     }
 }

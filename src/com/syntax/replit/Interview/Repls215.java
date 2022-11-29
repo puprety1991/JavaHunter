@@ -1,8 +1,5 @@
 package com.syntax.replit.Interview;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class Repls215 {
    /* A bracket is considered to be of the following characters: (, ).
     Two brackets are considered to be a matched pair if an opening bracket "(" occurs to the left of a closing bracket ")" of the exact same type.
@@ -31,37 +28,24 @@ public class Repls215 {
         boolean balanced = entry.isBalanced("()()()))");
         System.out.println(balanced);
     }
-
-    public boolean isBalanced(String s) {
-        int length = s.length();
-        if (length % 2 == 0) {
-            String firstPart = s.substring(0, length / 2);
-            String secondPart = s.substring(length / 2, length);
-            List<String>first=new LinkedList<>();
-            first.add(firstPart);
-            List<String>second = new LinkedList<>();
-            second.add(secondPart);
-            var iterator = first.listIterator();
-            var iterator1=second.listIterator();
-            while(iterator.hasNext()){
-                while (iterator1.hasNext()){
-                    var firstOne=iterator.next();
-                    var secondOne = iterator1.next();
-                   for(int i=0;i<firstOne.length();i++){
-                       if(firstOne.equals(secondOne)&&firstOne.contains("(")&&secondOne.contains(")")){
-                           return true;
-                       }else if(firstOne.charAt(i) != secondOne.charAt(i)){
-                           return true;
-                       }
-                   }
-                }
-            }
-        }else{
-            return false;
+    public static boolean isBalanced(String s){
+        char[] arr=s.toCharArray();
+        int openingBracket = 0;
+        int closingBracket = 0;
+        for (char sign : arr) {
+            if (sign == '(') {
+                openingBracket++;
+            } else if(sign==')'){
+                closingBracket++;
+            }}
+        if (openingBracket==closingBracket){
+            return true;
         }
-        return false;
+        else {
+            return false;
+        }}
     }
-}
+
 
 
 

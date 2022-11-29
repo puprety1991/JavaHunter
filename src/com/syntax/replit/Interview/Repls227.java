@@ -26,7 +26,9 @@ public class Repls227 {
 
         String[] splits = str.split("[><]");
 
+
         for (int i = 0; i < splits.length; i++) {
+
             if (openTags.contains(splits[i])) {
                 open.add(splits[i]);
             }
